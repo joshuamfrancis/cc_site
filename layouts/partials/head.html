@@ -11,6 +11,21 @@
 <meta property="og:url" content="{{ .Permalink }}">
 {{ with .Params.featured_image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
 
+<!-- Theme: set before CSS loads to prevent flash -->
+<script>
+  (function() {
+    var saved = localStorage.getItem('theme');
+    var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (saved === 'dark' || (!saved && prefersDark)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  })();
+</script>
+
 <!-- CSS -->
 {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+{{ $syntaxLight := resources.Get "css/syntax-light.css" | minify | fingerprint }}
+{{ $syntaxDark  := resources.Get "css/syntax-dark.css"  | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $syntaxLight.RelPermalink }}">
+<link rel="stylesheet" href="{{ $syntaxDark.RelPermalink }}">

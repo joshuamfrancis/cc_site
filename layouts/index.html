@@ -12,6 +12,6 @@
       {{ partial "post-card.html" . }}
     {{ end }}
   </div>
-  <a href="{{ "/blog/" | absURL }}" class="view-all">View all posts &rarr;</a>
+  <a href="{{ "/blog/" | relURL }}" class="view-all">View all posts &rarr;</a>
 </section>
 {{ end }}

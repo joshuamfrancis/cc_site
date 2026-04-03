@@ -10,13 +10,24 @@
   </main>
   {{ partial "footer.html" . }}
   <script>
-    // Mobile nav toggle
     document.addEventListener('DOMContentLoaded', function() {
+      // Mobile nav toggle
       const toggle = document.querySelector('.nav-toggle');
       const nav = document.querySelector('.site-nav');
       if (toggle && nav) {
         toggle.addEventListener('click', function() {
           nav.classList.toggle('open');
+        });
+      }
+
+      // Theme toggle
+      const themeToggle = document.getElementById('theme-toggle');
+      if (themeToggle) {
+        themeToggle.addEventListener('click', function() {
+          const current = document.documentElement.getAttribute('data-theme') || 'light';
+          const next = current === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          localStorage.setItem('theme', next);
         });
       }
     });
