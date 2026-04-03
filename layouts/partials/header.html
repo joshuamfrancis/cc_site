@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="container">
     <div class="site-title">
-      <a href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+      <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
     </div>
     <button class="nav-toggle" aria-label="Toggle navigation">
       <span></span>
@@ -12,7 +12,7 @@
       <ul>
         {{ range .Site.Menus.main }}
         <li>
-          <a href="{{ .URL | relURL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}{{ if hasPrefix .URL "http" }} target="_blank" rel="noopener"{{ end }}>
+          <a href="{{ .URL | absURL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}{{ if hasPrefix .URL "http" }} target="_blank" rel="noopener"{{ end }}>
             {{ .Name }}
           </a>
         </li>
