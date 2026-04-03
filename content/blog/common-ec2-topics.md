@@ -1,7 +1,7 @@
 ---
 title: "Common Ec2 Topics"
 date: 2026-04-03T19:58:39+10:00
-draft: true
+draft: false
 tags: ["hugo", "static-sites", "tutorial"]
 categories: ["EC2"]
 featured_image: ""
