@@ -1,4 +1,4 @@
-baseURL = "https://joshuamfrancis.github.io/cc_site/"
+baseURL = "https://blog.bitcraft.stream/"
 languageCode = "en-us"
 title = "My Blog"
 [pagination]
