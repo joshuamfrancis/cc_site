@@ -1,20 +1,20 @@
 baseURL = "https://blog.bitcraft.stream/"
 languageCode = "en-us"
-title = "My Blog"
+title = "Bit Craft"
 [pagination]
   pagerSize = 10
 summaryLength = 40
 enableRobotsTXT = true
 
 [params]
-  description = "A personal blog about technology, engineering, and ideas."
+  description = "Where bits are built, not born. A personal blog about technology, engineering, and ideas."
   author = "Joshua"
   mainSections = ["blog"]
 
   [params.social]
-    github = "https://github.com/example"
+    github = "https://github.com/joshuamfrancis"
     twitter = ""
-    linkedin = ""
+    linkedin = "https://www.linkedin.com/in/joshuamfrancis/"
     email = "mailto:hello@example.com"
 
 [taxonomies]
