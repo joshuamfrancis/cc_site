@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.noidea.dog)",
+      "Bash(hugo version:*)",
+      "WebFetch(domain:noidea.dog)",
+      "Bash(hugo config:*)",
+      "Bash(hugo --minify)",
+      "mcp__Claude_Preview__preview_start"
+    ]
+  }
+}

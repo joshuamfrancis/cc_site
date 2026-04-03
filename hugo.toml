@@ -1,0 +1,50 @@
+baseURL = "https://example.github.io/cc_site/"
+languageCode = "en-us"
+title = "My Blog"
+[pagination]
+  pagerSize = 10
+summaryLength = 40
+enableRobotsTXT = true
+
+[params]
+  description = "A personal blog about technology, engineering, and ideas."
+  author = "Joshua"
+  mainSections = ["blog"]
+
+  [params.social]
+    github = "https://github.com/example"
+    twitter = ""
+    linkedin = ""
+    email = "mailto:hello@example.com"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "github"
+    lineNos = false
+
+[[menus.main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 1
+
+[[menus.main]]
+  name = "Projects"
+  url = "/projects/"
+  weight = 2
+
+[[menus.main]]
+  name = "About"
+  url = "/about/"
+  weight = 3
+
+[[menus.main]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 4

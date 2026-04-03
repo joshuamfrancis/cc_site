@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="content-with-sidebar">
+  <div class="content-area">
+    <h1 class="section-heading">{{ .Title }}</h1>
+    <div class="post-list">
+      {{ range .Pages }}
+        {{ partial "post-card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+  {{ partial "sidebar.html" . }}
+</div>
+{{ end }}

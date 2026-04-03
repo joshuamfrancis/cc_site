@@ -1,0 +1,18 @@
+<div class="post-meta">
+  <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+  <span class="separator">|</span>
+  <span>{{ .ReadingTime }} min read</span>
+  {{ with .Params.tags }}
+  <span class="separator">|</span>
+  <div class="tags">
+    {{ range . }}
+      {{ $tagPage := site.GetPage (printf "/tags/%s" (. | urlize)) }}
+      {{ if $tagPage }}
+    <a href="{{ $tagPage.Permalink }}" class="tag">{{ . }}</a>
+      {{ else }}
+    <span class="tag">{{ . }}</span>
+      {{ end }}
+    {{ end }}
+  </div>
+  {{ end }}
+</div>

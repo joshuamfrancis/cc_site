@@ -1,0 +1,23 @@
+<header class="site-header">
+  <div class="container">
+    <div class="site-title">
+      <a href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav">
+      <ul>
+        {{ range .Site.Menus.main }}
+        <li>
+          <a href="{{ .URL | relURL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}{{ if hasPrefix .URL "http" }} target="_blank" rel="noopener"{{ end }}>
+            {{ .Name }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>

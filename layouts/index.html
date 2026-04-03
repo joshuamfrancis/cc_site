@@ -1,0 +1,17 @@
+{{ define "main" }}
+<section class="hero">
+  <h1>{{ .Site.Title }}</h1>
+  <p>{{ .Site.Params.description }}</p>
+</section>
+
+<section>
+  <h2 class="section-heading">Recent Posts</h2>
+  <div class="post-list">
+    {{ $posts := where site.RegularPages "Section" "blog" | first 6 }}
+    {{ range $posts }}
+      {{ partial "post-card.html" . }}
+    {{ end }}
+  </div>
+  <a href="{{ "/blog/" | relURL }}" class="view-all">View all posts &rarr;</a>
+</section>
+{{ end }}

@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="content-with-sidebar">
+  <div class="content-area">
+    <article>
+      <header class="post-header">
+        <h1>{{ .Title }}</h1>
+        {{ partial "post-meta.html" . }}
+        {{ with .Params.featured_image }}
+        <div class="featured-image">
+          <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+        </div>
+        {{ end }}
+      </header>
+      <div class="post-content">
+        {{ .Content }}
+      </div>
+    </article>
+
+    <!-- Previous / Next Navigation -->
+    <nav class="post-nav">
+      {{ with .PrevInSection }}
+      <div class="prev">
+        <span>&larr; Previous</span><br>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </div>
+      {{ end }}
+      {{ with .NextInSection }}
+      <div class="next">
+        <span>Next &rarr;</span><br>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </div>
+      {{ end }}
+    </nav>
+  </div>
+  {{ partial "sidebar.html" . }}
+</div>
+{{ end }}
