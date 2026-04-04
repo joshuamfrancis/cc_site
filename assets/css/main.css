@@ -46,6 +46,7 @@
    Theme Toggle Button
    ============================== */
 .theme-toggle {
+  margin-left: 1.5rem;
   background: none;
   border: 1px solid var(--color-border);
   border-radius: 6px;
@@ -159,8 +160,28 @@ main.container {
 .site-header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: var(--header-height);
+}
+
+.site-header.has-banner {
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  border-bottom: none;
+}
+
+.site-header.has-banner .site-title a,
+.site-header.has-banner .site-nav a,
+.site-header.has-banner .theme-toggle,
+.site-header.has-banner .nav-toggle span {
+  color: #1e3a5f;
+}
+
+.site-header.has-banner .site-nav a.active,
+.site-header.has-banner .site-nav a:hover {
+  color: #4a6fa5;
+  opacity: 1;
 }
 
 .site-title {
@@ -177,6 +198,10 @@ main.container {
 .site-title a:hover {
   color: var(--color-link);
   text-decoration: none;
+}
+
+.site-nav {
+  margin-left: auto;
 }
 
 .site-nav ul {
