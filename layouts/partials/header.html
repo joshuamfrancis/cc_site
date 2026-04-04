@@ -1,4 +1,4 @@
-<header class="site-header">
+<header class="site-header{{ if site.Params.banner_image }} has-banner{{ end }}"{{ if site.Params.banner_image }} style="background-image: linear-gradient(rgba(255,255,255,0.15), rgba(255,255,255,0.15)), url('{{ site.Params.banner_image }}');"{{ end }}>
   <div class="container">
     <div class="site-title">
       <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>

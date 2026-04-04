@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c8d3e8"/>
+      <stop offset="50%" style="stop-color:#bbc8e0"/>
+      <stop offset="100%" style="stop-color:#adbad8"/>
+    </linearGradient>
+    <linearGradient id="line1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6b8cba;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#6b8cba;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#6b8cba;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="line2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a0b4d6;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#a0b4d6;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#a0b4d6;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1440" height="120" fill="url(#bg)"/>
+
+  <!-- Grid lines horizontal -->
+  <line x1="0" y1="30" x2="1440" y2="30" stroke="#4a6fa5" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="0" y1="60" x2="1440" y2="60" stroke="#4a6fa5" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="0" y1="90" x2="1440" y2="90" stroke="#4a6fa5" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- Grid lines vertical -->
+  <line x1="120" y1="0" x2="120" y2="120" stroke="#4a6fa5" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="240" y1="0" x2="240" y2="120" stroke="#4a6fa5" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="360" y1="0" x2="360" y2="120" stroke="#4a6fa5" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="480" y1="0" x2="480" y2="120" stroke="#4a6fa5" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="120" stroke="#4a6fa5" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="720" y1="0" x2="720" y2="120" stroke="#4a6fa5" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="840" y1="0" x2="840" y2="120" stroke="#4a6fa5" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="960" y1="0" x2="960" y2="120" stroke="#4a6fa5" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="1080" y1="0" x2="1080" y2="120" stroke="#4a6fa5" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="1200" y1="0" x2="1200" y2="120" stroke="#4a6fa5" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="1320" y1="0" x2="1320" y2="120" stroke="#4a6fa5" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- Accent lines -->
+  <line x1="0" y1="60" x2="1440" y2="60" stroke="url(#line1)" stroke-width="1.5"/>
+  <line x1="0" y1="45" x2="1440" y2="45" stroke="url(#line2)" stroke-width="1"/>
+
+  <!-- Dots at intersections -->
+  <circle cx="360" cy="30" r="1.5" fill="#4a6fa5" fill-opacity="0.25"/>
+  <circle cx="720" cy="60" r="2" fill="#4a6fa5" fill-opacity="0.35"/>
+  <circle cx="1080" cy="30" r="1.5" fill="#4a6fa5" fill-opacity="0.25"/>
+  <circle cx="480" cy="90" r="1.5" fill="#7a9cc5" fill-opacity="0.25"/>
+  <circle cx="960" cy="90" r="1.5" fill="#7a9cc5" fill-opacity="0.25"/>
+  <circle cx="240" cy="60" r="1.5" fill="#4a6fa5" fill-opacity="0.2"/>
+  <circle cx="1200" cy="60" r="1.5" fill="#4a6fa5" fill-opacity="0.2"/>
+
+  <!-- Subtle diagonal lines -->
+  <line x1="0" y1="120" x2="200" y2="0" stroke="#4a6fa5" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="400" y1="120" x2="600" y2="0" stroke="#4a6fa5" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="800" y1="120" x2="1000" y2="0" stroke="#4a6fa5" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="1200" y1="120" x2="1400" y2="0" stroke="#4a6fa5" stroke-opacity="0.04" stroke-width="1"/>
+</svg>

@@ -7,9 +7,12 @@ summaryLength = 40
 enableRobotsTXT = true
 
 [params]
-  description = "Where bits are built, not born. A personal blog about technology, engineering, and ideas."
+  description = "A personal blog about technology, engineering, and ideas."
+  tagline = "Where bits are built, not born !"
   author = "Joshua"
   mainSections = ["blog"]
+
+  banner_image = "/images/banner.svg"
 
   [params.social]
     github = "https://github.com/joshuamfrancis"
