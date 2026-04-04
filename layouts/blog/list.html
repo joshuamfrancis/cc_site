@@ -1,7 +1,12 @@
+{{ define "extraHead" }}
+<link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+{{ end }}
+
 {{ define "main" }}
 <div class="content-with-sidebar">
   <div class="content-area">
     <h1 class="section-heading">{{ .Title | default "Blog" }}</h1>
+    <div id="search" class="blog-search"></div>
     <div class="post-list">
       {{ range .Paginator.Pages }}
         {{ partial "post-card.html" . }}
@@ -30,4 +35,10 @@
   </div>
   {{ partial "sidebar.html" . }}
 </div>
+<script src="/_pagefind/pagefind-ui.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    new PagefindUI({ element: '#search', showSubResults: true });
+  });
+</script>
 {{ end }}
