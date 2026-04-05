@@ -1,6 +1,6 @@
 baseURL = "https://blog.bitcraft.stream/"
 languageCode = "en-us"
-title = "Bit Craft"
+title = "Blog@Bit Craft"
 [pagination]
   pagerSize = 10
 summaryLength = 40
