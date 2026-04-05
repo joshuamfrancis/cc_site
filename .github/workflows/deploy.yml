@@ -34,7 +34,7 @@ jobs:
         run: hugo --minify
 
       - name: Index site with Pagefind
-        run: npx pagefind --site public
+        run: npx -y pagefind --site public
 
       - name: Add CNAME
         run: echo "blog.bitcraft.stream" > ./public/CNAME
