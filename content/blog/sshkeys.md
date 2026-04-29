@@ -1,9 +1,9 @@
 ---
-title: "Common Ec2 Topics"
-date: 2026-04-03T19:58:39+10:00
+title: "ssh key management"
+date: 2026-04-30T08:05:28+10:00
 draft: false
-tags: ["ssh", "linux"]
-categories: ["linux", "ssh"]
+tags: ["Linux", "ssh"]
+categories: ["Linux", "Security"]
 featured_image: ""
 summary: "SSH Key Management Best Practices"
 ---
